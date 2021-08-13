@@ -60,9 +60,9 @@ Running the app we should be able to see the latest UK news. The user should hav
 
 Important Keys :
 
-1. Created a React Redux-Thunk app.
+1. Created a React Redux-Hooks app.
 2. service workers for call third party api
-3. Thunk for middleware
+3. Hooks for middleware
 4. I have written every case handling of API response like a. Success b. Failure c. Records not available . 
 5. Used React-Router for routing and redirect 
 6. Comman Static Header 
@@ -97,13 +97,13 @@ For run rest API folow
 
 4. Design : HTML5, CSS3 , Bootstrap
 
-5. Technology : React-Redux-Thunk
+5. Technology : React-Redux-Hooks
 
 6. Coding Editor : Visual Studio.
 
 7. Local Server : Node Server.
 
-8. Scripting Languages : JavaScript,ECMS-Script6,NodeJS,NPM,ReactJS-Redux-Thunk,babel
+8. Scripting Languages : JavaScript,ECMS-Script6,NodeJS,NPM,ReactJS-Redux-Hooks,babel
 
 9. Version Control Tool : GIT
 
