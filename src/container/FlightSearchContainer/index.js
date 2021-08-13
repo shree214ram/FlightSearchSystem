@@ -25,14 +25,6 @@ class FlightSearch extends React.Component {
   }
 
   render() {
-    const loaderStyle = { height: '100%', width: '100%', display: 'flex', alignItems: 'center' }
-    // const LoaderOn = this.props.vehicleList.status === "fetching";
-    // if (LoaderOn) {
-    //   return (<div style={loaderStyle}>
-    //     <Loader />
-    //   </div>)
-    // }
-
     return (
       <div>
         <FlightSearchComponent vehicleData={this.state.vehicle} />
@@ -49,8 +41,6 @@ const mapDispatchToProps = (dispatch) => {
 const mapStateToProps = (state) => {
   return {
     ...state,
-    // vehicleList: state.VehicleListAllReducer,
-    // FlightSearchData: state.FlightSearchReducers
   }
 }
 

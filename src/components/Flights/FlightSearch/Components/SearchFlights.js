@@ -157,7 +157,6 @@ const SearchFlights = ({
   
   
   // Handle components
-  console.log(fields,"fields")
   return (
     <Fragment>
           <Fragment>

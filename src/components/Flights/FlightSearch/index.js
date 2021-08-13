@@ -1,10 +1,9 @@
 import React from 'react'
 import _ from 'lodash';
 import FlightsSearchForm from './SearchFlights'
-import { REGISTRATION_SCHEMA_ITEMS, pageSize, timeToRedirect } from '../../../constants/common-constants'
+import {  pageSize, timeToRedirect } from '../../../constants/common-constants'
 
 import { connect } from 'react-redux';
-// import { CompleteFlightsSearchAction, CompleteVehicleUpdateRegistrationAction, HandleChangeStepAction, HideMessageAction, ResetFlightsSearchAction, HandleChangeSpecificStepAction } from '../../../store/actions/flightSearch/flightSearch'
 import { CompleteAllFlightAction } from '../../../store/actions/flightList/flightList';
 import {  ResetFlightsSearchAction } from '../../../store/actions/flightSearch/flightSearch'
 
@@ -60,18 +59,12 @@ class FlightsSearch extends React.Component {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    // fetchAction: (params) => dispatch(CompleteAllFlightAction(params)),
     flightSearch: (params, values) => dispatch(CompleteAllFlightAction(params)),
-    // vehicleUpdateRegistration: (params, values) => dispatch(CompleteVehicleUpdateRegistrationAction(params, values)),
-    // handleChangeStep: (direction) => dispatch(HandleChangeStepAction(direction)),
-    // hideMessage: () => dispatch(HideMessageAction()),
     resetFlightsSearch: () => dispatch(ResetFlightsSearchAction()),
-    // handleSpecificStep: (step) => dispatch(HandleChangeSpecificStepAction(step)),
   }
 }
 
 const mapStateToProps = (state) => {
-  console.log(state,"state")
   return {
     ...state,
     flightSearchData: state.FlightsSearchReducers

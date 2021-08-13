@@ -66,7 +66,7 @@ Important Keys :
 4. I have written every case handling of API response like a. Success b. Failure c. Records not available . 
 5. Used React-Router for routing and redirect 
 6. Comman Static Header 
-7. Source and Destination cities are coming from json as expected . 
+7. Source and Destination cities are coming from json as expected : src/constants/source_destination_cities.js
 8. Default page load componenent called FlightList are has the latest flights coming from Node-Express API as expected
 9. Pagination working with Api paginate data.
 10. Search functionality also working , after slect Source and Destination City and search will happen with onSearch Button Click 
@@ -106,4 +106,7 @@ For run rest API folow
 8. Scripting Languages : JavaScript,ECMS-Script6,NodeJS,NPM,ReactJS-Redux-Hooks,babel
 
 9. Version Control Tool : GIT
+
+##setup Proxy : for call server api i used proxy 
+##service workers : as a middle ware i used serveice worker 
 

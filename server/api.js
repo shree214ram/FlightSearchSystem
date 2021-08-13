@@ -41,7 +41,6 @@ app.get("/flights", (req, res) => {
     const return_date = req.query.return_date;
 
     if(source_city !== "" || destination_city !== "" ||travel_date !== "" ||return_date !== "" ){
-        console.log("hay")
         if(source_city !== ""){
             flights = flights.filter(obj=>obj.source_city ==  source_city) ;
         }

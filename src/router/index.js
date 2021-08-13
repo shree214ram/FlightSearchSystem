@@ -5,7 +5,6 @@ import Header from '../container/HeaderContainer';
 import { connect } from 'react-redux';
 import Navigation from '../components/Navigation';
 import { Container, CssBaseline } from '@material-ui/core';
-import ScreenCoverLoader from '../components/CommonComponents/Loader/ScreenCoverLoader';
 import FlightList from '../container/flightList/index';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -41,10 +40,8 @@ const App = (props) => {
     }
     setOpen(true);
   };
-  const onLoggingOut = true;
   return (
     <div className={classes.root}>
-      {/* {onLoggingOut && <ScreenCoverLoader />} */}
       <CssBaseline />
       <BrowserRouter>
         <ToastContainer autoClose={2000} />

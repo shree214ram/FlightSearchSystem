@@ -3,18 +3,11 @@ import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import MenuIcon from '@material-ui/icons/Menu';
-import Badge from '@material-ui/core/Badge';
-import NotificationsIcon from '@material-ui/icons/Notifications';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import SearchInput from '../CommonComponents/SearchInput/SearchInput';
-import Link from '@material-ui/core/Link';
 import get from 'lodash/get'
 
 const drawerWidth = 240;
@@ -98,26 +91,11 @@ export default function Header(props) {
   return (
     <AppBar position="absolute" className={clsx(classes.appBar)} title="img">
       <Toolbar className={classes.toolbar}>
-        {/* <SearchInput />
-				<IconButton color="inherit">
-					<Badge color="secondary">
-						<NotificationsIcon />
-					</Badge>
-				</IconButton>
-				<Button
-					variant="contained"
-					className={classes.button}
-					startIcon={<AccountCircleIcon />}
-					endIcon={<ExpandMoreIcon />}
-				>
-					ADGP
-				</Button> */}
+        
         <div className={classes.searchBar}></div>
 
         <div className={classes.actionBar}>
-          {/* <Button variant="contained" className={classes.button} onClick={()=>logOut()} color="primary" >
-							Logout
-					</Button> */}
+          
           <IconButton
             // edge="end"
             className={classes.iconButton}

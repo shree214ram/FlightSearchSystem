@@ -1,27 +1,3 @@
-const string = "string"
-const float = "float"
-const datetime = "datetime"
-const boolean = "boolean"
-const int = "int"
-
-export const REGISTRATION_SCHEMA_ITEMS = {
-    vehicle: {
-        vehicle_brand: string,
-        vehicle_model: string,
-        vehicle_mfc_year: datetime,
-        status: boolean,
-        on_boarding_date: datetime,
-        off_boarding_date: datetime,
-        reg_unit: string,
-        reg_unit_add: string,
-        fitness_issue_date: datetime,
-        fitness_exp_date: datetime
-    }
-}
-
-
-
-
 export const validateMessage = {
     int: "Only number required",
     intLengthAtleastOne: "Minimum 1 number required",
