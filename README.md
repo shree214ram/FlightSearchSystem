@@ -48,7 +48,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 2. Go to in this folder.
 3. Run npm install command.
 4. Run npm start command.
-5. Run http://localhost:3000/ Or http://localhost:3000/flightList/all
+5. Run http://localhost:3000/ Or http://localhost:3000/flightList/all for client 
 
 ##Requirement
 
@@ -72,10 +72,19 @@ Important Keys :
 10. Search functionality also working , after slect Source and Destination City and search will happen with onSearch Button Click 
 
 ##Rest API related 
+
 I made server api with Node-Express 
+
 For run rest API folow 
+
  * cd server
  * nodemon api.js
+
+ ##Curl 
+ curl -X GET \
+  'http://localhost:3000/flights?page=0&limit=10&source_city=&destination_city=&travel_date=&return_date=' \
+  -H 'Postman-Token: test' \
+  -H 'cache-control: no-cache'
 
 
 ##Technical Skills
