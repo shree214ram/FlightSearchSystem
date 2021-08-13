@@ -1,0 +1,22 @@
+.csv-reader-input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.csv-reader-input input {
+    display: flex;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+}
+
+.csv-reader-input .csv-label{
+    position: relative;
+    margin: auto;
+}

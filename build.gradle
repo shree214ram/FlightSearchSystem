@@ -1,0 +1,57 @@
+apply plugin: 'nebula.rpm'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.netflix.nebula:gradle-ospackage-plugin:8.4.1'
+    }
+}
+
+task npmunistall(type: Exec) {
+    commandLine 'rm -rf', 'node_modules'
+}
+
+task npminstall(type: Exec) {
+    commandLine 'npm', 'i only=prod'
+}
+
+task prod(type: Exec) {
+    commandLine 'npm','run','build'
+}
+
+task rpm(type: Rpm) {
+    packageName = 'fleet-management'
+    version = "1.0.0"
+    release = "${new Date().format('yyyyMMdd_HHmm')}"
+    arch = NOARCH
+    os = LINUX
+
+    ext.root = "fleet-management/" + version + "-" + release
+    //path in generated rpm
+    into root
+
+    //source files
+    from('.'){
+        //Add here if you want to exclude any files
+        into '.'
+        exclude 'build/distributions'
+        exclude '.gradle'
+        exclude 'node_modules'
+        exclude '_npmcache'
+        exclude 'override.txt'
+        exclude 'build/tmp'
+        exclude 'build.gradle'
+        exclude 'README.md'
+        exclude 'package-lock.json'
+    }
+
+    doFirst {
+        println 'Hello Gradle starting to bundle'
+    }
+    doLast {
+        println 'Bye bye Gradle as build finished'
+    }
+}
