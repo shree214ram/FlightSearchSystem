@@ -1,0 +1,37 @@
+.vehicleListFilter{
+    margin:30px 0px;
+}
+.vehicleListFilter a.active{
+  background-color: #0a1528;
+  color: #f1f5f7;
+  padding: 5px 15px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 15px;
+}
+
+.vehicleListFilter a{
+    font-size: 13px;
+    background-color:transparent;
+  color: #263245;
+  padding: 5px 15px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin:0px 5px;  
+}
+
+/* .vehicleListFilter a.active::before {
+    content: "\A";
+    border-style: solid;
+    border-width: 7px 7px 7px 7px;
+    border-color: #0a1528 transparent transparent transparent;
+    position: absolute;
+    left: calc(50% - 5px);
+    bottom: -13px;
+} */
+
+.vehicleListFilter a:first-child{
+    margin:0px 5px 0px 0px ;
+}

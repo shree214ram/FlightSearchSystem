@@ -1,0 +1,55 @@
+.MuiInputBase-input,
+.MuiInput-input {
+  border-radius: 4px;
+  border: solid 1px #dddedf;
+}
+
+.MuiInput-underline:before {
+  border-bottom: none;
+}
+
+.MuiInputLabel-formControl {
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #263245;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.customInputLable {
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #263245;
+  top: 0;
+  left: 0;
+}
+
+.switchGrid {
+  padding: 32px 9px 0px 16px !important;
+}
+.abc {
+  margin-top: 0px !important;
+}
+
+label+.MuiInput-formControl {
+  margin-top: 21px;
+}
+
+.MuiStepIcon-root.MuiStepIcon-completed {
+  color: #129e00;
+}
+
+.customPointerClass .MuiStepIcon-root {
+    cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.*
+!/.gitignore
+.gradle/**/**
+node_modules
+package-lock.json
+.DS_Store
+build
+.vscode
+logs/
